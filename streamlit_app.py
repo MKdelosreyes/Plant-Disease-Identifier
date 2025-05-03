@@ -29,11 +29,11 @@ if uploaded_file is not None:
     # predicted_class = image_classes[predicted_index]
     confidence = prediction[0][predicted_index]
 
-    classes = ['Background_without_leaves', 'Corn___Northern_Leaf_Blight', 'Corn___healthy', 
-               'Grape___Black_rot', 'Grape___Esca_(Black_Measles)', 'Grape___healthy', 
-               'Peach___Bacterial_spot', 'Peach___healthy', 'Pepper,_bell___Bacterial_spot', 
-               'Pepper,_bell___healthy', 'Potato___Late_blight', 'Potato___healthy', 
-               'Strawberry___Leaf_scorch', 'Strawberry___healthy', 'Tomato___Bacterial_spot', 
-               'Tomato___Late_blight', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___healthy']
+    classes = ['Not a plant', 'Northern Leaf Blight', 'Healthy', 
+               'Black rot', 'Black Measles', 'Healthy', 
+               'Bacterial spot', 'Healthy', 'Bacterial spot', 
+               'Healthy', 'Late blight', 'Healthy', 
+               'Leaf scorch', 'Healthy', 'Bacterial spot', 
+               'Late blight', 'Yellow Leaf Curl Virus', 'Healthy']
 
     st.success(f"### 🧠 Prediction: **{classes[predicted_class[0]]} - {confidence:.2f}**")
